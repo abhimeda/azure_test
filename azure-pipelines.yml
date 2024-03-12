@@ -14,7 +14,7 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
-    git clone git@github.com:abhimeda/azure_test.git
+    git clone https://github.com/abhimeda/azure_test.git
     cd azure_test
     gcc -Wall -Wextra -std=c99    hello_world.c   -o hello_world
     ./hello_world
