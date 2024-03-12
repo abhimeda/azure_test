@@ -15,4 +15,5 @@ steps:
 
 - script: |
     echo  '$(System.DefaultWorkingDirectory)'
+    ls
   displayName: 'Displaying working directory'
