@@ -14,7 +14,7 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
-    make
+    gcc -Wall -Wextra -std=c99    hello_world.c   -o hello_world
     ./hello_world
-    make clean
+    rm -f hello_world
   displayName: 'Compiling a hello world c program'
