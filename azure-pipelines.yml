@@ -14,11 +14,5 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
-    git clone https://github.com/abhimeda/azure_test.git
-    cd azure_test
-    gcc -Wall -Wextra -std=c99    hello_world.c   -o hello_world
-    ./hello_world
-    rm -f hello_world
-    cd ..
-    rm -rf azure_test
-  displayName: 'Compiling a hello world c program'
+    echo  '$(System.DefaultWorkingDirectory)'
+  displayName: 'Displaying working directory'
